@@ -69,9 +69,19 @@ const ContactForm = () => {
                 onChange={onChange} 
             />
             <h5>Contact Type</h5>
-            <input type="radio" name="type" value="personal" checked={type === 'personal'} onChange={onChange}  
+            <input 
+                type="radio" 
+                name="type" 
+                value="personal" 
+                checked={type === 'personal'} 
+                onChange={onChange}  
             />Personal{ ' ' }
-            <input type="radio" name="type" value="professional" checked={type === 'professional'} onChange={onChange} 
+            <input 
+                type="radio" 
+                name="type" 
+                value="professional" 
+                checked={type === 'professional'} 
+                onChange={onChange} 
             />Professional{ ' ' }
             <div>
                 <input 
@@ -81,7 +91,9 @@ const ContactForm = () => {
             </div>
             {current && (
         <div>
-          <button className='btn btn-light btn-block' onClick={clearAll}>
+          <button 
+            className='btn btn-light btn-block' 
+            onClick={clearAll}>
             Clear
           </button>
         </div>
