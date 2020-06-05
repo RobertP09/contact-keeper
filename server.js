@@ -29,3 +29,5 @@ if (process.env.NODE_ENV === "production") {
 app.listen(PORT, () => {
 	console.log(`App listening on port ${PORT}!`);
 });
+
+// Make a prod json file and push that
